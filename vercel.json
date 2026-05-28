@@ -1,0 +1,21 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/installation-guide", "destination": "/installation-guide.html" },
+    { "source": "/sky-glass-iptv-installation-guide", "destination": "/installation-guide.html" },
+    { "source": "/buy-now", "destination": "/buy-now.html" },
+    { "source": "/sky-glass-iptv-subscription", "destination": "/buy-now.html" },
+    { "source": "/reseller-panel", "destination": "/reseller-panel.html" },
+    { "source": "/iptv-reseller-panel", "destination": "/reseller-panel.html" },
+    { "source": "/blog", "destination": "/blog.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=3600" }
+      ]
+    }
+  ]
+}
